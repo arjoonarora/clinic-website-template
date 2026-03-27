@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrightSmile Dental Clinic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- POPUP -->
+<div class="popup-overlay" id="popup">
+  <div class="popup-box">
+    <div class="popup-icon">⚠️</div>
+    <h2>THIS IS AN EXAMPLE WEBSITE</h2>
+    <p>ALL INFORMATION ON THIS SITE IS NOT REAL.<br>This is a demo/portfolio project only.</p>
+    <button class="popup-btn" onclick="closePopup()">Got It!</button>
+  </div>
+</div>
+
+<nav>
+  <div class="nav-logo">Bright<span>Smile</span></div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#doctor">Our Doctor</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-btn">Book Now</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-badge">Trusted Dental Care Since 2010</div>
+    <h1 class="hero-heading">Your <span>Healthy Smile</span> Starts Here</h1>
+    <p class="hero-desc">Expert dental care in a warm, comfortable environment. From routine checkups to advanced treatments — we make every visit stress-free.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Book Appointment</a>
+      <a href="#services" class="btn-secondary">Our Services</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">12<span>+</span></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div>
+        <div class="stat-num">5k<span>+</span></div>
+        <div class="stat-label">Happy Patients</div>
+      </div>
+      <div>
+        <div class="stat-num">4.9<span>★</span></div>
+        <div class="stat-label">Average Rating</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-card">
+      <div class="floating-badge">✓ Open Today</div>
+      <h3>Clinic Hours</h3>
+      <p>We're here when you need us most. Walk-ins welcome!</p>
+      <ul class="timing-list">
+        <li><span class="day">Mon – Fri</span><span class="time">9am – 7pm</span></li>
+        <li><span class="day">Saturday</span><span class="time">9am – 5pm</span></li>
+        <li><span class="day">Sunday</span><span class="time">10am – 3pm</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-tag">What We Offer</div>
+  <h2 class="section-heading">Our <span>Services</span></h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🦷</span>
+      <h3>Teeth Cleaning</h3>
+      <p>Professional deep cleaning to remove plaque and tartar. Keep your smile fresh and healthy.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">✨</span>
+      <h3>Teeth Whitening</h3>
+      <p>Advanced whitening treatment for a brighter, more confident smile in just one visit.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔧</span>
+      <h3>Braces & Aligners</h3>
+      <p>Straighten your teeth with modern braces or invisible aligners tailored to your needs.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🛡️</span>
+      <h3>Root Canal</h3>
+      <p>Painless root canal treatment to save your natural tooth and eliminate infection.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">👶</span>
+      <h3>Kids Dentistry</h3>
+      <p>Gentle, fun dental care designed specially for children in a friendly environment.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">💎</span>
+      <h3>Dental Implants</h3>
+      <p>Permanent, natural-looking tooth replacements that restore your smile and confidence.</p>
+    </div>
+  </div>
+</section>
+
+<section id="doctor">
+  <div class="doctor-container">
+    <div class="doctor-avatar">👨‍⚕️</div>
+    <div>
+      <div class="doctor-tag">Meet Our Expert</div>
+      <h2 class="doctor-name">Dr. Rajiv Sharma</h2>
+      <p class="doctor-title">BDS, MDS — Orthodontics & Cosmetic Dentistry</p>
+      <p class="doctor-desc">With over 12 years of experience, Dr. Sharma is committed to providing gentle, high-quality dental care. He believes every patient deserves a healthy, beautiful smile — and a stress-free visit.</p>
+      <div class="doctor-badges">
+        <span class="badge">✓ 12+ Years Experience</span>
+        <span class="badge">✓ 5000+ Patients</span>
+        <span class="badge">✓ Pain-Free Treatment</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-tag">Get In Touch</div>
+  <h2 class="section-heading">Book Your <span>Appointment</span></h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-icon">📍</div>
+      <h4>Address</h4>
+      <p>123 Example Street, City, State</p>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">📞</div>
+      <h4>Phone</h4>
+      <p>+91 00000 00000 (Example)</p>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <h4>Email</h4>
+      <p>example@brightsmile.in</p>
+    </div>
+  </div>
+  <a href="#" class="contact-btn">📞 Call to Book — It's Free</a>
+</section>
+
+<footer>
+  <p>© 2025 BrightSmile Dental Clinic. Example website — all info is fictional.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
