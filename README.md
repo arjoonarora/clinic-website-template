@@ -18,6 +18,9 @@ I can create a custom site with:
 💬 WhatsApp: 9773502975  
 🐙 GitHub: arjoonarora
 
+Portfolio: arjoonarora.github.io/portfolio
+Clinic Demo: arjoonarora.github.io/clinic-website-template
+Freelance: READY!
 Price starts at ₹5,000. Delivery in 2 days.
 
 © Arjoon Arora — Frontend Developer
