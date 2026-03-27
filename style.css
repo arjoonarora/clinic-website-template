@@ -49,10 +49,7 @@ body {
   to   { opacity: 1; transform: scale(1); }
 }
 
-.popup-icon {
-  font-size: 3rem;
-  margin-bottom: 16px;
-}
+.popup-icon { font-size: 3rem; margin-bottom: 16px; }
 
 .popup-box h2 {
   font-family: 'Playfair Display', serif;
@@ -141,6 +138,25 @@ nav {
 .nav-btn:hover {
   background: var(--blue-dark) !important;
   transform: translateY(-1px);
+}
+
+/* ===== HAMBURGER ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 2px;
+  background: var(--blue);
+  border-radius: 2px;
+  transition: 0.2s;
 }
 
 /* ===== HERO ===== */
@@ -248,6 +264,7 @@ nav {
   margin-top: 48px;
   padding-top: 36px;
   border-top: 1px solid rgba(42,159,214,0.15);
+  flex-wrap: wrap;
 }
 
 .stat-num {
@@ -307,6 +324,7 @@ nav {
   padding: 8px 0;
   border-bottom: 1px solid var(--grey-light);
   font-size: 0.88rem;
+  flex-wrap: wrap;
 }
 
 .timing-list li:last-child { border: none; }
@@ -397,6 +415,7 @@ nav {
   gap: 80px;
   max-width: 1000px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .doctor-avatar {
@@ -524,8 +543,170 @@ footer {
   font-size: 0.82rem;
 }
 
+footer a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* ===== ANIMATION ===== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+  }
+  
+  .hero-left {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-btns {
+    justify-content: center;
+  }
+  
+  .hero-stats {
+    justify-content: center;
+  }
+  
+  .doctor-container {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(16px);
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 20px;
+    transition: left 0.3s ease;
+    border-bottom: 1px solid rgba(42,159,214,0.2);
+  }
+  
+  .nav-links.active {
+    left: 0;
+  }
+  
+  .hero-card {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  .floating-badge {
+    top: -12px;
+    right: -12px;
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .doctor-container {
+    gap: 30px;
+  }
+  
+  .doctor-avatar {
+    width: 140px;
+    height: 140px;
+    font-size: 3.5rem;
+  }
+  
+  .doctor-name {
+    font-size: 1.5rem;
+  }
+  
+  .doctor-badges {
+    justify-content: center;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-stats {
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn-primary, .btn-secondary {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .hero-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .hero-stats > div {
+    text-align: center;
+  }
+  
+  .hero-card {
+    padding: 24px 20px;
+  }
+  
+  .hero-card::before {
+    font-size: 2rem;
+  }
+  
+  .hero-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .timing-list li {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+  }
+  
+  .popup-box {
+    padding: 32px 24px;
+    width: 90%;
+  }
+  
+  .popup-box h2 {
+    font-size: 1.2rem;
+  }
+  
+  .contact-btn {
+    padding: 12px 28px;
+    font-size: 0.9rem;
+  }
 }
